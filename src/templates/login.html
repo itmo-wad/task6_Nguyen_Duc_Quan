@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		.a1{
+			background-color: white; 
+			width: 25%;
+			min-width: 500px;
+			height: 35%;	
+			text-align: center; 
+			font-size: 15px; 
+			font-family: Georgia;
+			margin: auto;
+		}
+		.input{
+			font-size: 20px;
+			float: right;
+		}
+		table{
+			margin: auto;
+		}
+	</style>
+</head>
+
+<body style = "background-color:#333333">
+	<div class ="a1">
+		<div style ="background-color: #aaaa55">
+			<h1>Login to your cabinet</h1>
+		</div>
+		<form method="POST" action="/">
+			<table border="0">
+				<tr>
+					<td><label style="float: left" for="user">Username:</label></td>
+					<td width="20px"></td>
+					<td><input class="input" type="text" id="user" name="username" placeholder="Type your username here" required></td>
+				</tr>
+				<tr>
+					<td><label style="float: left" for="pass">Password:</label></td>
+					<td width="20px"></td>
+					<td><input class="input"  type="password" id="pass" name="password" required></td>
+				</tr>	
+				<tr>
+					<td colspan="1"><button onclick="location.href = '/register'">Create account</button></td>
+					<td colspan="2"><button type="submit" class="btn">Sign in</button></td>
+				</tr>
+			</table>
+  		</form> 
+	</div>
+</body >
+</html>
